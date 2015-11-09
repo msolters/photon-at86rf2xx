@@ -1,7 +1,7 @@
 # photon-at86rf233
 A basic driver that allows ATMEL's AT86RF233 radio to be used with the Photon or Electron.
 
-[arduino-at86rf233.ino](https://github.com/msolters/photon-at86rf233/blob/master/firmware/examples/photon-at86rf233.ino) demonstrates the simplest example application -- a Photon application that scans for nearby 802.15.4 traffic and prints incoming frames over serial (115200 baud).
+[firmware/examples/photon-at86rf233.ino](https://github.com/msolters/photon-at86rf233/blob/master/firmware/examples/photon-at86rf233.ino) demonstrates the simplest example application -- a Photon application that scans for nearby 802.15.4 traffic and prints incoming frames over serial (115200 baud).
 
 ## Radio Hardware
 Designed to be used with ATMEL's AT86RF233 802.15.4 radio, [available as a $30USB radio extension board (REB)](http://www.mouser.com/ProductDetail/Atmel/ATREB233-XPRO/?qs=HVbQlW5zcXX%2FEgqNxRIBfA%3D%3D).
