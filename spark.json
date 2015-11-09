@@ -1,0 +1,7 @@
+{
+    "name": "at86rf233",
+    "version": "0.0.1",
+    "author": "Mark Solters <msolters@gmail.com>",
+    "license": "LGPL",
+    "description": "Basic driver for the at86rf233 radio module from ATMEL."
+}
