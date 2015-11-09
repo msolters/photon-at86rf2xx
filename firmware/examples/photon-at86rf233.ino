@@ -1,4 +1,4 @@
-#include "at86rf233/at86rf2xx.h"
+#include "at86rf2xx/at86rf2xx.h"
 
 SYSTEM_THREAD(ENABLED);
 
