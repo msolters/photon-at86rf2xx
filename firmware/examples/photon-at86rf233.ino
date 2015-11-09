@@ -1,5 +1,7 @@
 #include "at86rf233/at86rf2xx.h"
 
+SYSTEM_THREAD(ENABLED);
+
 int received = 0;
 
 int interrupt_pin = D2;
