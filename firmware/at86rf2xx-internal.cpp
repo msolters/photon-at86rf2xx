@@ -112,14 +112,13 @@ void at86rf2xx_assert_awake()
 void at86rf2xx_hardware_reset()
 {
     /* wake up from sleep in case radio is sleeping */
-    delayMicroseconds(50); // Arduino seems to hang without some minimum pause here
     at86rf2xx_assert_awake();
 
     /* trigger hardware reset */
 
-    digitalWrite(at86rf2xx_dev.sleep_pin, LOW);
+    digitalWrite(at86rf2xx_dev.reset_pin, LOW);
     delayMicroseconds(AT86RF2XX_RESET_PULSE_WIDTH);
-    digitalWrite(at86rf2xx_dev.sleep_pin, HIGH);
+    digitalWrite(at86rf2xx_dev.reset_pin, HIGH);
     delayMicroseconds(AT86RF2XX_RESET_DELAY);
 }
 
