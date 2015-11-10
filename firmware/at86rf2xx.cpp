@@ -74,7 +74,7 @@ int AT86RF2XX::init(uint32_t spi_speed, int cs_pin_, int int_pin_, int sleep_pin
     digitalWrite(sleep_pin, LOW);
     digitalWrite(reset_pin, HIGH);
     digitalWrite(cs_pin, HIGH);
-    attachInterrupt(digitalPinToInterrupt(int_pin), at86rf2xx_irq_handler, RISING);
+    attachInterrupt(int_pin, at86rf2xx_irq_handler, RISING);
 
     /* make sure device is not sleeping, so we can query part number */
     assert_awake();
