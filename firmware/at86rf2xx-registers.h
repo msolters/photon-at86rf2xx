@@ -8,6 +8,7 @@
  */
 
 /**
+ * @ingroup     drivers_at86rf2xx
  * @{
  *
  * @file
@@ -339,3 +340,4 @@ extern "C" {
 
 #endif /* AT86RF2XX_REGISTERS_H_ */
 /** @} */
+
