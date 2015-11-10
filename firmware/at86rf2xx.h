@@ -53,6 +53,7 @@ class AT86RF2XX
 {
   public:
 
+    uint8_t idle_state;                 /**< state to return to after sending */
     volatile int events;                /**< # of pending interrupts from the radio */
 
     AT86RF2XX();
@@ -389,7 +390,6 @@ class AT86RF2XX
     uint8_t addr_short[2];              /**< the radio's short address */
     uint8_t addr_long[8];               /**< the radio's long address */
     uint16_t options;                   /**< state of used options */
-    uint8_t idle_state;                 /**< state to return to after sending */
 
     /**
      * @brief   Trigger a clear channel assessment
